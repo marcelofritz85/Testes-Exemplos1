@@ -4,9 +4,9 @@ public class No<T>{
 irão receber o endereço dos outros objetos
 do tipo No */
 private No ant, prox;
-private int info;
+private T info;
 //construtor
-public No(No ant,No prox,int info){
+public No(No ant,No prox,T info){
 
 	this.ant=ant;
 
@@ -23,7 +23,7 @@ public void setAnt(No p_ant) { ant=p_ant; }
 
 public void setProx(No p_prox) { prox=p_prox; }
 
-public int getInfo() { return info; }
+public T getInfo() { return info; }
 
-public void setInfo(int elemento) { info=elemento; }
+public void setInfo(T elemento) { info=elemento; }
 }

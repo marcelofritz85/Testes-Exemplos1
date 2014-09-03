@@ -6,17 +6,11 @@ public class Main {
 		// TODO Auto-generated method stub
 		Lista lista = new Lista();
 		
+		lista.insereNoComeco("teste");
+		
 		lista.insereNoComeco(10);
 		
-		lista.insereNoFim(20);
-		
-		lista.insereNoComeco(9);
-		
-		lista.Busca_Exaustiva(20);
-		
-		lista.exibeLista();
-		
-		lista.removeLista(10);
+	
 		
 		lista.exibeLista();
 		
