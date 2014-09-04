@@ -71,7 +71,7 @@ public No Busca_Exaustiva(Object elemento){
 }
 
 //no remove temos 5 casos a considerar
-public void removeLista(int elemento){
+public void removeLista(Object elemento){
 	No pos;
 	pos=Busca_Exaustiva(elemento);
 	if (pos!=null){//1- se existe o No a ser deletado{

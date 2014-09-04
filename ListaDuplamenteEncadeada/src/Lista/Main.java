@@ -6,14 +6,19 @@ public class Main {
 		// TODO Auto-generated method stub
 		Lista lista = new Lista();
 		
-		lista.insereNoComeco("teste");
+		lista.insereNoComeco('A');
 		
-		lista.insereNoComeco(10);
+		lista.insereNoComeco(2);
 		
-	
+		lista.insereNoComeco(3);
+		
+		lista.insereNoComeco("Inicio");
 		
 		lista.exibeLista();
 		
+		lista.removeLista("Fim");
+		
+		lista.exibeLista();
 		
 	}
 
