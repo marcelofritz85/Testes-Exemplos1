@@ -20,7 +20,7 @@ public void inicializa(){
 //inicializa faz a lista ficar vazia
 }
 
-
+//____________________________________________________________________
 //aqui fazemos uma lista para inserir somente no final
 private void insereNoFim(T info){
 //declaramos e instanciamos a variavel caixa
@@ -35,7 +35,7 @@ private void insereNoFim(T info){
 		fim = caixa;
 	}
 }
-
+//____________________________________________________________________
 //aqui fazemos uma lista para inserir somente no comeco
 private void insereNoComeco(T info){
 //declaramos e instanciamos a variavel caixa
@@ -50,7 +50,7 @@ private void insereNoComeco(T info){
 		inicio = caixa;
 	}
 }
-
+//____________________________________________________________________
 public void inserir(T info){
 	No<T> caixa=new No<T>(null, null, info);
 	if (inicio==null)
@@ -80,7 +80,7 @@ public void inserir(T info){
 	
 }//metodo
 
-
+//____________________________________________________________________
 private No<T> procurarProx(T valor) {
 	No<T> iter = this.inicio;
 	while (iter != null) {
@@ -94,7 +94,7 @@ private No<T> procurarProx(T valor) {
 		return null;
 }
 
-
+//____________________________________________________________________
 public void exibeLista(){
 	No<T> aux;
 	aux=inicio;
@@ -103,7 +103,7 @@ public void exibeLista(){
 		aux=aux.getProx();
 	}
 }
-
+//____________________________________________________________________
 public No<T> Busca_Exaustiva(Object elemento){
 	No<T> p=inicio;
 	while ((p!=null) && (p.getInfo()!=elemento)){
@@ -113,7 +113,7 @@ public No<T> Busca_Exaustiva(Object elemento){
 		return p;
 	else return null;
 }
-
+//____________________________________________________________________
 //no remove temos 5 casos a considerar
 public void removeElemento(T elemento){
 	No<T> pos;
